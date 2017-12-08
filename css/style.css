@@ -1,0 +1,189 @@
+/*General styles*/
+
+body {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+}
+
+section,
+header {
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+section>.container {
+    height: 100%;
+}
+
+h1 {
+    margin: 0;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 27px;
+}
+
+.gallery-1,
+.gallery-2,
+.gallery-3,
+.gallery-4,
+.gallery-5,
+.blog-1,
+.blog-2,
+.blog-3 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.75);
+}
+
+.btn {
+    margin-top: 30px;
+    border-radius: 0%;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/*General styles - end*/
+
+
+/*Menu*/
+
+.navbar-brand {
+    font-family: Pacifico;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+
+/*Menu - end*/
+
+
+/*Header*/
+
+.navbar {
+    background-color: transparent;
+}
+
+.home-nav {
+    background-image: url(../img/background_menu.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.marg {
+    margin-top: 160px;
+}
+
+.btn-warning {
+    background-color: #ff6033;
+    margin-top: 0px;
+}
+
+
+/*Header- end*/
+
+
+/*Section About Us*/
+.sec-about {
+    background-image: url(../img/background_raspberry.jpg);
+    height: 100vh;
+    background-size: cover;
+    color: #ffffff;
+}
+.position-about {
+    margin-top: 140px;
+    padding-left: 122px;
+}
+
+.sec-about .container .row .col-md-6 p:nth-child(2) {
+   margin-bottom: 0px;
+}
+.sec-about .container .row .col-md-6 p:nth-child(3) {
+   margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+/*Section About Us - end*/
+
+
+/*Section Gallery*/
+
+.sec-gallery {
+    background-color: #ffe92f;
+    /*overflow: hidden;*/
+}
+
+.container-gallery-1,
+.container-gallery-2-3 {
+    height: 550px;
+}
+
+.container-gallery-4,
+.container-gallery-5 {
+    height: 400px;
+    margin-top: 30px;
+}
+
+.gallery-1 {
+    background-image: url(../img/plate_peach_03.jpg);
+}
+
+.gallery-2 {
+    background-image: url(../img/berry_blue_05.jpg);
+    background-position: center;
+    height: 47.3%;
+    margin-bottom: 30px;
+}
+
+.gallery-3 {
+    background-image: url(../img/berry_black_08.jpg);
+    height: 47.3%;
+}
+
+.gallery-4 {
+    background-image: url(../img/bowl_milk_berry_11.jpg);
+}
+
+.gallery-5 {
+    background-image: url(../img/kaki_fruit_13.jpg);
+}
+
+
+/*Section gallery - end*/
+
+.sec-blog {
+    background-color: #b07cf7;
+}
+
+.blog {
+    color: white;
+}
+
+
+/*Section blog*/
+
+.container-blog {
+    height: 370px;
+}
+
+.blog-1 {
+    background-image: url(../img/smoothie_green.jpg);
+}
+
+.blog-2 {
+    background-image: url(../img/soup_green.jpg);
+}
+
+.blog-3 {
+    background-image: url(../img/raspberry.jpg);
+}
+
+
+/*Section blog - end*/
