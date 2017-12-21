@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weekly Web Dev Challenge 2</title>
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,900" rel="stylesheet">
@@ -13,32 +14,32 @@
 </head>
 
 <body>
-    <header id="home" class="home-nav">
-        <!-- Main Mavigaion Menu -->
-        <nav id="main-nav" class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+    <section id="home" class="home-nav">
+        <div class="container container-home">
+            <!-- Main Mavigaion Menu -->
+            <nav id="main-nav" class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-                    <a class="navbar-brand" href="#main-header">Cahee</a>
+                        <a class="navbar-brand" href="#home">Cahee</a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-right" id="main-menu">
+                        <ul class="nav navbar-nav text-right">
+                            <li><a href="#home">home</a></li>
+                            <li><a href="#about">about</a></li>
+                            <li><a href="#services">services</a></li>
+                            <li><a href="#gallery">gallery</a></li>
+                            <li><a href="#blog">blog</a></li>
+                            <li><a href="#contact">contact</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="collapse navbar-collapse navbar-right" id="main-menu">
-                    <ul class="nav navbar-nav text-right">
-                        <li><a href="#home">home</a></li>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#services">services</a></li>
-                        <li><a href="#gallery">gallery</a></li>
-                        <li><a href="#blog">blog</a></li>
-                        <li><a href="#contact">contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="container marg">
+            </nav>
             <div class="row">
                 <div class="col-md-4">
                     <h1>Fresh life</h1>
@@ -46,9 +47,14 @@
                     <button class="btn btn-warning btn-lg">view more</button>
                 </div>
             </div>
+            <div class="row force-to-bottom text-center">
+                <div class="col-md-12 mouse">
+                    <a href="#about"><img src="img/mouse.jpg" alt=""></a>
+                </div>
+            </div>
+            <!-- Main Mavigaion Menu End -->
         </div>
-        <!-- Main Mavigaion Menu End -->
-    </header>
+    </section>
     <section id="about" class="sec-about">
         <div class="container">
             <div class="row">
@@ -56,6 +62,41 @@
                     <h1>About Us</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, consequatur. Non rerum aspernatur animi odit enim autem quam, doloremque, fugiat hic dolor reiciendis eos totam tempora dolore praesentium accusantium, voluptate?</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi temporibus debitis sint iure ea reiciendis quam ad ratione tempora, suscipit veritatis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="sec-services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" align="center">
+                    <div class="panel">
+                        <p>Online Shopping</p>
+                        <div class="line">
+                        </div>
+                        <img src="img/icon_shopping_basket.jpg" alt="">
+                    </div>
+                    <div class="panel">
+                        <p>Quality Product</p>
+                        <div class="line">
+                        </div>
+                        <img src="img/icon_hand_plant.jpg" alt="">
+                    </div>
+                    <div class="panel">
+                        <p><span>Domestic & International</span><span> Delivery</span></p>
+                        <div class="line">
+                        </div>
+                        <img src="img/icon_earth.jpg" alt="">
+                    </div>
+                    <div class="panel">
+                        <p>Well organized</p>
+                        <div class="line">
+                        </div>
+                        <img src="img/icon_carrot.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 position-services" align="center">
+                    <h1>Our Services</h1>
                 </div>
             </div>
         </div>
@@ -71,25 +112,35 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="container-gallery-1">
-                        <div class="gallery-1"></div>
+                        <div class="gallery-1">
+                            <a href="img/plate_peach_03.jpg" data-lightbox="plate-peach_03"></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="container-gallery-2-3">
-                        <div class="gallery-2"></div>
-                        <div class="gallery-3"></div>
+                        <div class="gallery-2">
+                            <a href="img/berry_blue_05.jpg" data-lightbox="berry_blue_05"></a>
+                        </div>
+                        <div class="gallery-3">
+                            <a href="img/berry_black_08.jpg" data-lightbox="berry_black_08"></a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
                     <div class="container-gallery-4">
-                        <div class="gallery-4"></div>
+                        <div class="gallery-4">
+                            <a href="img/bowl_milk_berry_11.jpg" data-lightbox="bowl_milk_berry_11"></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="container-gallery-5">
-                        <div class="gallery-5"></div>
+                        <div class="gallery-5">
+                            <a href="img/kaki_fruit_13.jpg" data-lightbox="kaki_fruit_13.jpg"></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -98,37 +149,137 @@
             </div>
         </div>
     </section>
+    <section id="subscribe" class="sec-subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 col-md-6">
+                    <h1 class=>Subscribe To Us</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed incidunt beatae aperiam nostrum quam quis at modi quaerat esse omnis minima, temporibus eos. Quis error et, alias eos, repellendus optio.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-6 text-center">
+                    <input class="input-size" type="text" placeholder="Your email adress..">
+                </div>
+                <div class="col-sm-6 col-md-3 text-center">
+                    <button class="btn btn-success btn-lg">view more</button>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="blog" class="sec-blog">
         <div class="container">
             <div class="row text-center">
-                <div class="col-md-6 col-md-offset-3">
-                    <h1 class="blog">Blog</h1>
+                <div class="col-md-6 col-md-offset-3 blog-font">
+                    <h1>Blog</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat temporibus esse nostrum at reiciendis, animi magni suscipit maxime magnam doloremque consequuntur pariatur modi tempora explicabo labore porro dolor dignissimos nesciunt!</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="container-blog">
-                        <div class="blog-1"></div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="container-blog center-block">
+                        <div class="blog-1">
+                            <div class="blog-image">
+                                <img src="img/date_20NOV.jpg" alt="">
+                            </div>
+                            <div class="blog-content">
+                                <h2>Green smoothies: Too much of a Good Thing?</h2>
+                                <p>By Auskteez - 2 hours ago</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="container-blog">
-                        <div class="blog-2"></div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="container-blog center-block">
+                        <div class="blog-2">
+                            <div class="blog-image">
+                                <img src="img/date_14NOV.jpg" alt="">
+                            </div>
+                            <div class="blog-content">
+                                <h2>Growing Food and a "Thirst" for Innovation</h2>
+                                <p>By Auskteez - 3 hours ago</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="container-blog">
-                        <div class="blog-3"></div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="container-blog center-block">
+                        <div class="blog-3">
+                            <div class="blog-image">
+                                <img src="img/date_10NOV.jpg" alt="">
+                            </div>
+                            <div class="blog-content">
+                                <h2>Pesticides and Food: What You Need to Know</h2>
+                                <p>By Auskteez - 6 hours ago</p>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="row text-center">
+                    <button class="btn btn-danger btn-lg">view more</button>
                 </div>
             </div>
-            <div class="row"></div>
         </div>
     </section>
+    <section id="contact" class="sec-form">
+        <div class="container">
+            <div class="row text-center font-form">
+                <div class="col-md-6 col-md-offset-3">
+                    <h1>Contact</h1>
+                    <div>For new projects, ideas, business or anything
+                    </div>
+                    <div>you'd like to discuss, contact with me!</div>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your name..." required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your email..." required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Your phone number..." required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="11" placeholder="Your message..." required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-info btn-lg">send</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-5 col-md-offset-2 position-form-other">
+                    <p class="span-position"><span>address</span><span>123 City name,Street,City.County</span></p>
+                    <p><span>email</span><span>random@abc.com</span></p>
+                    <p><span>phone</span><span>+48 555 555 02</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="foot" class="sec-foot">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <p>&copy; 2017 Comapany. All rights reserved.</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Cahee</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Made with<span> love</span> by Tomasz</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
