@@ -1,3 +1,4 @@
+
 /*General styles*/
 
 body {
@@ -90,7 +91,6 @@ p {
     bottom: 50px;
     left: 50%;
     transform: translate(-50%);
-   
 }
 
 .mouse {
@@ -450,3 +450,65 @@ p {
 
 
 /*Footer - end*/
+
+/*Responsive styles*/
+
+@media all and (min-width: 1024px) {
+    .smaller {
+        display: none;
+    }
+    
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    .desktop {
+        display: none;
+    }
+    .smaller h1 {
+        padding-bottom: 30px;
+        padding-top: 0px;
+    }
+    
+      .container-gallery-2-3 {
+        margin-top: 30px;
+    }
+    .form-horizontal {
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+    .position-form-other {
+        margin-left: 60px;
+    }
+    
+     .home-nav {
+        background-size: 1500px 1000px;
+        background-position: center;
+    }
+    
+   
+}
+
+/*@media all and (max-width: 480) {
+    
+    
+}*/
+
+/*@media all and (min-width: 768px) {
+    .container-gallery-2-3 {
+        margin-top: 30px;
+    }
+    .form-horizontal {
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+    .position-form-other {
+        margin-left: 60px;
+    }
+    .home-nav {
+        background-size: 1500px 1000px;
+        background-position: center;
+    }
+}*/
+
+
+/*Responsive styles end*/
